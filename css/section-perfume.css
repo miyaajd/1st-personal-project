@@ -1,6 +1,5 @@
 @charset "utf-8";
 .perfume-wrap{
-    margin-top: var(--visual-height);
     width: 100%;
     position: relative;
 }
