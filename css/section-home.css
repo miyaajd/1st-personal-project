@@ -46,6 +46,7 @@
 }
 .home-list img {
     width: 100%;
+    transition: all 0.3s;
 }
 .home-list img:hover{
     filter: brightness(80%);
