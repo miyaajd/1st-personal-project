@@ -76,7 +76,7 @@
 .f-bottom-bottom {
   display: flex;
   justify-content: space-between;
-  padding: 25px 60px;
+  padding: 25px 60px 24px;
   border-top: 0.6px solid #fff;
 }
 .shop a {
