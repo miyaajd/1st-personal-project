@@ -1,0 +1,52 @@
+@charset "utf-8";
+.home-wrap{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 24px;
+}
+/* 왼쪽영역 */
+.home-left{
+    width: 40%;
+}
+.home-left img{
+    width: 100%;
+    height: 100vh
+}
+/* 오른쪽영역 */
+.home-right{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 33%;
+
+}
+.home-txt a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 22px;
+}
+.home{
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: 500;
+}
+.home-txt .arrow{
+    width: 22px;
+}
+.home-list{
+    display: flex;
+    gap:16px;
+    padding-right: 24px;
+}
+.home-list li{
+    width: calc(100% / 5);
+}
+.home-list img {
+    width: 100%;
+}
+.home-list img:hover{
+    filter: brightness(80%);
+}
