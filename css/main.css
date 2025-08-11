@@ -1,6 +1,6 @@
 @charset "utf-8";
 @import url(header.css);
-@import url(section.css);
+@import url(section-perfume.css);
 @import url(visual.css);
 @import url(footer.css);
 * {
@@ -34,4 +34,7 @@ img {
     "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   position: relative;
+}
+:root {
+  --visual-height: 50vw;
 }
