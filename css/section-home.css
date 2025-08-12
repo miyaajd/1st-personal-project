@@ -1,63 +1,118 @@
 @charset "utf-8";
-.home-wrap{
-    width: 100vw;
-    display: flex;
-    gap: 24px;
+.home-wrap {
+  width: 100vw;
+  display: flex;
+  gap: 24px;
 }
 /* 왼쪽영역 */
-.home-left{
-    width: 40vw;
+.home-left {
+  width: 40vw;
 }
-.home-left img{
-    width: 100%;
-    aspect-ratio: 3/4;
+.home-left img {
+  width: 100%;
+  aspect-ratio: 3/4;
 }
 /* 오른쪽영역 */
-.home-right{
-    width: 60vw;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding-top: 30%;
-
+.home-right {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 30%;
 }
-.home-txt a{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    height: 22px;
+.home-txt a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 22px;
 }
-.home{
-    color: #1d1d1d;
-    font-size: 22px;
-    font-weight: 600;
+.home {
+  color: #1d1d1d;
+  font-size: 22px;
+  font-weight: 600;
 }
-.home-txt .arrow{
-    width: 22px;
+.home-txt .arrow {
+  width: 22px;
 }
-.home-list{
-    display: flex;
-    gap:16px;
-    padding-right: 24px;
-    margin-bottom: px;
+.home-list {
+  display: flex;
+  gap: 16px;
+  padding-right: 24px;
+  margin-bottom: px;
 }
-.home-list li{
-    width: calc(100% / 5);
+.home-list li {
+  width: calc(100% / 5);
 }
 .home-list img {
-    width: 100%;
-    transition: all 0.3s;
+  width: 100%;
+  transition: all 0.3s;
 }
-.home-list img:hover{
-    filter: brightness(80%);
+.home-list img:hover {
+  filter: brightness(80%);
 }
 /*  */
 /*  */
 /*  */
 /* 768 */
+.tablet-h-wrap {
+  width: 100%;
+  height: 100vh; 
+  display: none;
+  position: relative;
+}
+.tablet-h-left {
+  width: 100%;
+  height: 100vh;
+}
+#home-left {
+  width: 100%;
+  height: 100vh;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+.tablet-h-right {
+  width: 30%;
+  height: 100vh;
+}
+.tablet-h-right img {
+  width: 100%;
+  height: calc(100vh / 4);
+  object-fit: cover;
+  transition: all 0.3s ease;
+  
+}
+.tablet-h-right img:hover {
+  filter: brightness(80%);
+}
+.tablet-h-txt {
+  position: absolute;
+  display: flex;
+  gap: 5px;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  padding: 20px 30px;
+}
+.tablet-h-txt a {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 20px;
+}
+.tablet-h-txt span {
+  color: #1d1d1d;
+  font-size: 18px;
+  font-weight: 600;
+}
+.tablet-h-txt img {
+  width: 18px;
+}
 
-@media screen and (max-width:768px){
-    .home-wrap{
-        display: none;
-    }
+@media screen and (max-width: 768px) {
+  .home-wrap {
+    display: none;
+  }
+  .tablet-h-wrap {
+    display: flex;
+  }
 }
