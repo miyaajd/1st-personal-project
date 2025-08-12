@@ -56,29 +56,38 @@
 /* 768 */
 .tablet-h-wrap {
   width: 100%;
-  height: 100vh;
+  height: 120vw;
   display: none;
   position: relative;
 }
 .tablet-h-left {
   width: 100%;
-  height: 100vh;
+  height: 120vw;
 }
 #home-left {
   width: 100%;
-  height: 100vh;
+  height: 120vw;
   aspect-ratio: 3 / 4;
   object-fit: cover;
 }
 .tablet-h-right {
   width: 30%;
-  height: 100vh;
+  height: 120vw;
 }
-.tablet-h-right img {
+.tablet-h-right li{
   width: 100%;
-  height: calc(100vh / 4);
+  height: calc(120vw / 4);
+}
+.tablet-h-right li a{
+  width: 100%;
+  height: 100%;
+}
+.tablet-h-right a img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   transition: all 0.3s ease;
+  object-position: center -30px;
 }
 .tablet-h-right img:hover {
   filter: brightness(80%);
