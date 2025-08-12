@@ -1,25 +1,24 @@
 @charset "utf-8";
 .home-wrap{
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
     display: flex;
     gap: 24px;
 }
 /* 왼쪽영역 */
 .home-left{
-    width: 40%;
+    width: 40vw;
 }
 .home-left img{
     width: 100%;
-    height: 100vh
+    aspect-ratio: 3/4;
 }
 /* 오른쪽영역 */
 .home-right{
-    width: 60%;
+    width: 60vw;
     display: flex;
     flex-direction: column;
     gap: 24px;
-    padding-top: 33%;
+    padding-top: 30%;
 
 }
 .home-txt a{
@@ -40,6 +39,7 @@
     display: flex;
     gap:16px;
     padding-right: 24px;
+    margin-bottom: px;
 }
 .home-list li{
     width: calc(100% / 5);

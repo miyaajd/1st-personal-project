@@ -1,7 +1,6 @@
 @charset "utf-8";
 .perfume-wrap {
   width: 100%;
-  height: 100vh;
 }
 /* 퍼퓸상단 */
 .perfume-top {
@@ -16,7 +15,7 @@
   width: calc(100% / 3);
 }
 .perfume-txt {
-  width: 100%;
+  width: 100vw;
   display: flex;
   gap: 5px;
   align-items: center;
@@ -40,6 +39,7 @@
   width: 100%;
   display: flex;
   gap: 16px;
+  margin-bottom: 60px;
 }
 .perfume-list li {
   width: calc(100% / 13);
