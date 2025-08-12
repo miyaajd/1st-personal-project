@@ -47,3 +47,25 @@ figure {
     height: 80vh;
   }
 }
+/*  */
+/*  */
+/*  */
+/* 390 */
+@media screen and (max-width: 390px) {
+  .visual-wrap {
+    width: 100vw;
+    height: 55vh;
+  }
+  .visual-txt a {
+    display: flex;
+    gap: 5px;
+    padding: 12px;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+  }
+  .arrow {
+    width: 16px;
+  }
+}
