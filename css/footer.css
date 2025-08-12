@@ -95,7 +95,7 @@
   flex-direction: column;
   gap: 35px;
   white-space: nowrap;
-  padding: 50px 60px;
+  padding: 50px 40px ;
 }
 .tablet-f-list a {
   color: #fff;
@@ -119,6 +119,7 @@
     flex-direction: column;
     align-items: start;
     gap: 30px;
+    padding: 25px 40px;
   }
   .f-m-right {
     text-align: left;
@@ -128,6 +129,9 @@
   }
   .tablet-f-list {
     display: flex;
+  }
+  .f-bottom-bottom{
+    padding: 25px 40px 24px;
   }
 }
 /*  */
