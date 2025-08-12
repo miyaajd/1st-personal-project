@@ -96,3 +96,30 @@ nav {
 .search-box i {
   font-size: 18px;
 }
+/*  */
+/*  */
+/*  */
+/* 768 */
+.tablet-menu{
+  display: none;
+  gap: 24px;
+  font-size: 21px;
+  
+}
+.tablet-menu i {
+  color: #fff;
+  opacity: 80%;
+  line-height: 1;
+}
+@media screen and (max-width: 768px) {
+  nav,
+  .top-right{
+    display: none;
+  }
+  .header{
+    justify-content: space-between;
+  }
+  .tablet-menu{
+    display: flex;
+  }
+}
