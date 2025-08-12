@@ -59,3 +59,69 @@
 .perfume-list img:hover {
   filter: brightness(80%);
 }
+/*  */
+/*  */
+/*  */
+/* 768 */
+.tablet-p-wrap{
+  display: none;
+}
+/* 상단 */
+.tablet-p-top {
+  width: 100%;
+  position: relative;
+}
+#hinoki-p {
+  width: 100%;
+  aspect-ratio: 8 / 9;
+  object-fit: cover;
+  overflow: hidden;
+}
+.tablet-p-txt {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  position: absolute;
+  left: 30px;
+  bottom: 20px;
+}
+.tablet-p-txt {
+  color: #1d1d1d;
+  font-size: 20px;
+  font-weight: 600;
+}
+.tablet-p-txt img{
+  width: 20px;
+}
+/* 하단 */
+.tablet-p-bottom{
+  width: 100%;
+}
+.tablet-p-list{
+  width: 100%;
+  display: flex;
+}
+.tablet-p-list li{
+  width: calc(100% / 6);
+  object-fit: cover;
+  overflow: hidden;
+}
+.tablet-p-list img{
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.tablet-p-list img:hover{
+  filter: brightness(80%);
+}
+@media screen and (max-width: 768px) {
+  .perfume-wrap {
+    width: 100vw;
+  }
+  .perfume-top,
+  .perfume-bottom {
+    display: none;
+  }
+  .tablet-p-wrap{
+    display: block;
+  }
+}
