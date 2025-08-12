@@ -63,7 +63,7 @@
 /*  */
 /*  */
 /* 768 */
-.tablet-p-wrap{
+.tablet-p-wrap {
   display: none;
 }
 /* 상단 */
@@ -90,27 +90,27 @@
   font-size: 20px;
   font-weight: 600;
 }
-.tablet-p-txt img{
+.tablet-p-txt img {
   width: 20px;
 }
 /* 하단 */
-.tablet-p-bottom{
+.tablet-p-bottom {
   width: 100%;
 }
-.tablet-p-list{
+.tablet-p-list {
   width: 100%;
   display: flex;
 }
-.tablet-p-list li{
+.tablet-p-list li {
   width: calc(100% / 6);
   object-fit: cover;
   overflow: hidden;
 }
-.tablet-p-list img{
+.tablet-p-list img {
   width: 100%;
   transition: all 0.3s ease;
 }
-.tablet-p-list img:hover{
+.tablet-p-list img:hover {
   filter: brightness(80%);
 }
 @media screen and (max-width: 768px) {
@@ -121,7 +121,36 @@
   .perfume-bottom {
     display: none;
   }
-  .tablet-p-wrap{
+  .tablet-p-wrap {
     display: block;
+  }
+}
+/*  */
+/*  */
+/*  */
+/* 390 */
+@media screen and (max-width: 390px) {
+  .tablet-p-bottom {
+    display: none;
+  }
+  #hinoki-p {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+  }
+  .tablet-p-txt {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+  }
+  .tablet-p-txt span {
+    color: #1d1d1d;
+    font-size: 16px;
+  }
+  .tablet-p-txt img {
+    width: 16px;
   }
 }
