@@ -3,7 +3,7 @@
 .visual-wrap{
     position: relative;
     width: 100vw;
-    height: 56.25vw;
+    height: 100vh;
     margin-top: -80px;
     overflow: hidden;
 }
