@@ -57,7 +57,6 @@
   display: flex;
   gap: 5px;
   align-items: center;
-  font-size: 18px;
 }
 .tablet-r-txt span {
   color: #fff;
@@ -74,4 +73,30 @@
   .tablet-r-wrap{
     display: block;
   }
+}
+/*  */
+/*  */
+/*  */
+/* 390 */
+@media screen and (max-width:390px){
+  #tabalet-r-bg {
+  width: 100%;  
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+.tablet-r-txt a {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.tablet-r-txt span {
+  color: #fff;
+  font-size: 16px;
+}
+.tablet-r-txt img {
+  width: 16px;
+}
+.tablet-r-txt{
+  padding: 12px;
+}
 }
