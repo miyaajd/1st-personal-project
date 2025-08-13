@@ -2,7 +2,7 @@
 /* 헤더 */
 .header {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 80px;
   /* background-color: #ddd; */
   display: flex;
@@ -16,6 +16,41 @@
 }
 .logo img {
   width: 100%;
+}
+/* ******************메뉴오픈 때 로고**************** */
+
+#logoBlack {
+  width: 100%;
+  display: none;
+}
+/* *****************메뉴오픈 때 헤더 바뀌는부분 ***********/
+/* active 상태일 때 헤더 배경 */
+.header.active {
+  background-color: #fff;
+}
+
+/* active 상태일 때 로고 이미지 변경 */
+.header.active #logoWhite {
+  display: none;
+}
+.header.active #logoBlack {
+  display: block;
+}
+/* active 상태일 때 글자 색 */
+.header.active .top-menu a,
+.header.active .top-right i,
+.header.active .top-right input {
+  color: #1d1d1d;
+}
+.header.active .top-menu a::after{
+  background-color: #1d1d1d;
+}
+.header.active .search-box {
+  border: 1.3px solid #1d1d1d;
+}
+/* active 상태일 때 placeholder 색 */
+.header.active .top-right input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 /* 네비 */
@@ -99,53 +134,65 @@ nav {
 /*  */
 /*  */
 /*  */
+/* 반응 */
+@media screen and (max-width: 1360px) {
+  .search-box {
+    display: none;
+  }
+}
+/*  */
+/*  */
+/*  */
 /* 768 */
-.tablet-menu{
+.tablet-menu {
   display: none;
   gap: 24px;
   font-size: 21px;
-  
 }
 .tablet-menu i {
   color: #fff;
   opacity: 80%;
   line-height: 1;
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1090px) {
   nav,
   .top-right,
-  .mobile-menu{
+  .mobile-menu {
     display: none;
   }
-  .header{
+  .header {
     justify-content: space-between;
   }
-  .tablet-menu{
+  .tablet-menu {
     display: flex;
+  }
+  .logo {
+    width: 150px;
   }
 }
 /*  */
 /*  */
 /*  */
 /* 390 */
-.mobile-menu{
+.mobile-menu {
   display: none;
 }
-.mobile-menu i{
+.mobile-menu i {
   color: #fff;
   font-size: 18px;
 }
-@media screen and (max-width: 390px){
-  .logo{
+@media screen and (max-width: 390px) {
+  .logo {
     width: 100px;
   }
-  .header{
+  .header {
     padding: 16px;
   }
-  .tablet-menu{
+  .tablet-menu {
     display: none;
   }
-  .mobile-menu{
+  .mobile-menu {
     display: block;
   }
 }
