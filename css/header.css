@@ -9,6 +9,8 @@
   justify-content: flex-start;
   padding: 24px 30px;
   z-index: 9999;
+  background-color: transparent;
+  transition: all 0.3s ease;
 }
 .logo {
   width: 200px;
@@ -18,40 +20,63 @@
   width: 100%;
 }
 /* ******************메뉴오픈 때 로고**************** */
-
 #logoBlack {
   width: 100%;
   display: none;
 }
+/* ********************overlay********************** */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
 /* *****************메뉴오픈 때 헤더 바뀌는부분 ***********/
 /* active 상태일 때 헤더 배경 */
-.header.active {
+/* .header.active {
   background-color: #fff;
-}
+} */
 
 /* active 상태일 때 로고 이미지 변경 */
-.header.active #logoWhite {
+/* .header.active #logoWhite {
   display: none;
 }
 .header.active #logoBlack {
   display: block;
-}
+} */
+
 /* active 상태일 때 글자 색 */
-.header.active .top-menu a,
+/* .header.active .top-menu a,
 .header.active .top-right i,
 .header.active .top-right input {
   color: #1d1d1d;
 }
-.header.active .top-menu a::after{
+.header.active .top-menu a::after {
   background-color: #1d1d1d;
 }
 .header.active .search-box {
   border: 1.3px solid #1d1d1d;
-}
+} */
 /* active 상태일 때 placeholder 색 */
-.header.active .top-right input::placeholder {
+/* .header.active .top-right input::placeholder {
   color: rgba(0, 0, 0, 0.6);
-}
+} */
+/*  */
+/* .header.active .depth2{
+  opacity: 1;
+  visibility: visible;
+} */
 
 /* 네비 */
 nav {
@@ -82,6 +107,68 @@ nav {
 .top-menu a:hover::after {
   opacity: 1;
 }
+/* **********************depth2***************** */
+.depth2 {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-top: 1px solid #efefef;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  padding: 30px;
+  gap: 20px;
+  background-color: #fff;
+}
+.depth2 li {
+  width: 10%;
+}
+.depth2 img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+.depth2 span {
+  font-size: 1.2rem;
+  color: #1d1d1d;
+}
+/* #dep-hinoki{
+  display: none;
+}
+#dep-perfume{
+  display: none;
+}
+#dep-handLip{
+  display: none;
+}
+#dep-body{
+  display: none;
+}
+#dep-home{
+  display: none;
+}
+#dep-store{
+  display: none;
+} */
+
+/* .depth2-bg {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  height: 13vw;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+} */
+ /* ****************depth2 나타냄****************** */
+ #a-hinoki.show{
+  
+ }
 
 /* 상단 오른쪽(서치,아이콘) */
 .top-right {
