@@ -90,7 +90,7 @@ nav {
 }
 .top-menu > li:hover {
   padding-bottom: 5px;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1.5px solid #fff;
 }
 /* **********************depth2***************** */
 .depth2 {

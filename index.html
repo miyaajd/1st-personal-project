@@ -25,6 +25,12 @@
     <link rel="manifest" href="images/탬버린즈 파비콘/site.webmanifest" />
     <!-- css -->
     <link rel="stylesheet" href="css/main.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- 아이콘 -->
     <link
       rel="stylesheet"
@@ -35,6 +41,10 @@
     />
     <!-- js -->
     <script src="js/header.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/perfume.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <!-- 전체영역 -->
@@ -288,7 +298,6 @@
           <a href="#" id="hamburger-menu"><i class="fa-solid fa-bars"></i></a>
         </div>
       </header>
-      
 
       <!-- 비주얼 -->
       <div class="visual-wrap">
@@ -350,108 +359,82 @@
         <div class="perfume-bottom">
           <ul class="perfume-list">
             <li>
-              <a href="#">
-                <img
-                  src="images/퍼퓸50ML/imgi_20_thumbnail_50ml_Perfume_Hinoki.jpg"
-                  alt="퍼퓸20"
-                />
-              </a>
+              <img
+                src="images/퍼퓸50ML/imgi_20_thumbnail_50ml_Perfume_Hinoki.jpg"
+                alt="퍼퓸20"
+              />
             </li>
             <li>
-              <a href="#">
-                <img
-                  src="images/퍼퓸50ML/imgi_21_thumbnail_Bottari_50ml_Perfume_2.jpg"
-                  alt="퍼퓸21"
-                />
-              </a>
+              <img
+                src="images/퍼퓸50ML/imgi_21_thumbnail_Bottari_50ml_Perfume_2.jpg"
+                alt="퍼퓸21"
+              />
             </li>
             <li>
-              <a href="#">
-                <img
-                  src="images/퍼퓸50ML/imgi_22_thumbnail_Evening_50ml_Perfume.jpg"
-                  alt="퍼퓸22"
-                />
-              </a>
+              <img
+                src="images/퍼퓸50ML/imgi_22_thumbnail_Evening_50ml_Perfume.jpg"
+                alt="퍼퓸22"
+              />
             </li>
             <li>
-              <a href="#">
-                <img
-                  src="images/퍼퓸50ML/imgi_28_thumbnail_50ml_Perfume_Haystacks.jpg"
-                  alt="퍼퓸28"
-                />
-              </a>
+              <img
+                src="images/퍼퓸50ML/imgi_28_thumbnail_50ml_Perfume_Haystacks.jpg"
+                alt="퍼퓸28"
+              />
             </li>
             <li>
-              <a href="#">
-                <img
-                  src="images/퍼퓸50ML/imgi_29_thumbnail_50ml_Perfume_HolyMetal.jpg"
-                  alt="퍼퓸29"
-                />
-              </a>
+              <img
+                src="images/퍼퓸50ML/imgi_29_thumbnail_50ml_Perfume_HolyMetal.jpg"
+                alt="퍼퓸29"
+              />
             </li>
             <li>
-              <a href="#">
-                <img
-                  src="images/퍼퓸50ML/imgi_31_thumbnail_50ml_Perfume_WoodSaltBeach.jpg"
-                  alt="퍼퓸31"
-                />
-              </a>
+              <img
+                src="images/퍼퓸50ML/imgi_31_thumbnail_50ml_Perfume_WoodSaltBeach.jpg"
+                alt="퍼퓸31"
+              />
             </li>
             <li>
-              <a href="#">
-                <img
-                  src="images/퍼퓸50ML/imgi_36_thumbnail_Bottari_11ml_Purfume(Black)_2.jpg"
-                  alt="퍼퓸36"
-                />
-              </a>
+              <img
+                src="images/퍼퓸50ML/imgi_36_thumbnail_Bottari_11ml_Purfume(Black)_2.jpg"
+                alt="퍼퓸36"
+              />
             </li>
             <li>
-              <a href="#">
-                <img
-                  src="images/퍼퓸50ML/imgi_37_thumbnail_Bottari_11ml_Purfume(White).jpg"
-                  alt="퍼퓸37"
-                />
-              </a>
+              <img
+                src="images/퍼퓸50ML/imgi_37_thumbnail_Bottari_11ml_Purfume(White).jpg"
+                alt="퍼퓸37"
+              />
             </li>
             <li>
-              <a href="#">
-                <img
-                  src="images/퍼퓸50ML/imgi_42_thumbnail_11ml_Perfume_SaltyVanilla.jpg"
-                  alt="퍼퓸42"
-                />
-              </a>
+              <img
+                src="images/퍼퓸50ML/imgi_42_thumbnail_11ml_Perfume_SaltyVanilla.jpg"
+                alt="퍼퓸42"
+              />
             </li>
             <li>
-              <a href="#">
-                <img
-                  src="images/퍼퓸50ML/imgi_46_thumbnail_14ml_EggPerfume_Wear_Beigge.jpg"
-                  alt="퍼퓸46"
-                />
-              </a>
+              <img
+                src="images/퍼퓸50ML/imgi_46_thumbnail_14ml_EggPerfume_Wear_Beigge.jpg"
+                alt="퍼퓸46"
+              />
             </li>
             <li>
-              <a href="#">
-                <img
-                  src="images/퍼퓸50ML/imgi_48_thumbnail_EggPerfume_1.jpg"
-                  alt="퍼퓸48"
-                />
-              </a>
+              <img
+                src="images/퍼퓸50ML/imgi_48_thumbnail_EggPerfume_1.jpg"
+                alt="퍼퓸48"
+              />
             </li>
             <li>
-              <a href="#">
-                <img
-                  src="images/퍼퓸50ML/imgi_51_thumbnail_Bottari_Oil_Perfume_2.jpg"
-                  alt="퍼퓸51"
-                />
-              </a>
+              <img
+                src="images/퍼퓸50ML/imgi_51_thumbnail_Bottari_Oil_Perfume_2.jpg"
+                alt="퍼퓸51"
+              />
             </li>
             <li>
-              <a href="#">
-                <img
-                  src="images/퍼퓸50ML/imgi_52_thumbnail_Bottari_Oil_Perfume(Black).jpg"
-                  alt="퍼퓸52"
-                />
-              </a>
+              <img
+                src="images/퍼퓸50ML/imgi_52_thumbnail_Bottari_Oil_Perfume(Black).jpg"
+                alt="퍼퓸52"
+              />
             </li>
           </ul>
         </div>
@@ -575,34 +558,41 @@
               />
             </a>
           </div>
-          <!--  -->
-          <ul class="home-list">
-            <li>
-              <a href="#">
-                <img src="images/홈프래그넌스/Rectangle 25.png" alt="홈25" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="images/홈프래그넌스/Rectangle 26.png" alt="홈26" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="images/홈프래그넌스/Rectangle 27.png" alt="홈27" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="images/홈프래그넌스/Rectangle 28.png" alt="홈28" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="images/홈프래그넌스/Rectangle 29.png" alt="홈29" />
-              </a>
-            </li>
-          </ul>
+          <!-- swiper -->
+          <div class="swiper home-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="images/홈프래그넌스/Rectangle 25.png"
+                  alt="슬라이드"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/홈프래그넌스/Rectangle 26.png"
+                  alt="슬라이드"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/홈프래그넌스/Rectangle 27.png"
+                  alt="슬라이드"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/홈프래그넌스/Rectangle 28.png"
+                  alt="슬라이드"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/홈프래그넌스/Rectangle 29.png"
+                  alt="슬라이드"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!--반응형 홈섹션 (768)  -->
