@@ -111,6 +111,7 @@
 .tablet-p-list img {
   width: 100%;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 .tablet-p-list img:hover {
   filter: brightness(80%);
