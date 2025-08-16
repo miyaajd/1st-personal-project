@@ -130,6 +130,7 @@
     height: auto;
   }
   .tablet-h-left {
+    width: 100vw;
     height: auto;
   }
   .tablet-h-txt {
