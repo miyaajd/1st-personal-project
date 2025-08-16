@@ -37,7 +37,7 @@
   transition: all 0.3s ease;
   cursor: pointer;
 }
-.header.active .overlay{
+.header.active .overlay {
   opacity: 1;
   visibility: visible;
 }
@@ -116,6 +116,10 @@ nav {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+.depth2 img:hover {
+  filter: brightness(80%);
 }
 .depth2 span {
   font-size: 1.2rem;
