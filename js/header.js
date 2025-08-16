@@ -2,6 +2,8 @@ window.addEventListener("load", function () {
   const header = document.querySelector(".header");
   const topMenu = document.querySelectorAll(".top-menu > li");
   const subMenu = document.querySelectorAll(".depth2");
+  const hamburger = document.querySelectorAll(".tablet-menu .fa-bars, .mobile-menu .fa-bars");
+
   topMenu.forEach((li, index) => {
     li.addEventListener("click", function () {
       // 모든 서브메뉴 닫기
@@ -33,4 +35,14 @@ window.addEventListener("load", function () {
   });
   // 바깥 클릭 시 닫기 + 헤더 복구
   document.addEventListener("click", closeAll);
+  // *******************768**********************
+  hamburger.forEach((li) => {
+    li.addEventListener("click", function (e) {
+      e.stopPropagation();
+      // 헤더 활성화
+      header.classList.add("active");
+      //   스크롤 없애기
+      document.documentElement.style.overflow = "hidden";
+    });
+  });
 });

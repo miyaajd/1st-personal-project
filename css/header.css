@@ -41,6 +41,10 @@
   opacity: 1;
   visibility: visible;
 }
+.header.active .overlay {
+  opacity: 1;
+  visibility: visible;
+}
 /* *****************메뉴오픈 때 헤더 바뀌는부분 ***********/
 /* active 상태일 때 헤더 배경 */
 .header.active {
@@ -70,6 +74,9 @@
 /* active 상태일 때 placeholder 색 */
 .header.active .top-right input::placeholder {
   color: rgba(0, 0, 0, 0.6);
+}
+.header.active .tablet-menu i {
+  color: #1d1d1d;
 }
 
 /* 네비 */
@@ -202,11 +209,6 @@ nav {
 /*  */
 /*  */
 /* 반응 */
-@media screen and (max-width: 1360px) {
-  .search-box {
-    display: none;
-  }
-}
 /*  */
 /*  */
 /*  */
@@ -221,7 +223,48 @@ nav {
   opacity: 80%;
   line-height: 1;
 }
+.mobile-depth2 {
+  background-color: #fff;
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -1000px;
+  padding: 80px 30px;
+  z-index: 9999;
+  transition: all 0.3s ease;
+}
+.mobile-depth2 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.mobile-depth2 a {
+  color: #1d1d1d;
+  font-size: 18px;
+  font-weight: 500;
+}
+.mobile-depth2 a:hover {
+  color: #999;
+}
+.header.active .mobile-depth2 {
+  left: 0;
+}
 
+@media screen and (max-width: 1360px) {
+  .search-box {
+    display: none;
+  }
+  .header.active {
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 3000px) {
+  .header.active .mobile-depth2 {
+    display: none;
+  }
+}
 @media screen and (max-width: 1090px) {
   nav,
   .top-right,
@@ -230,12 +273,20 @@ nav {
   }
   .header {
     justify-content: space-between;
+    z-index: 9;
   }
   .tablet-menu {
     display: flex;
+    cursor: pointer;
   }
   .logo {
     width: 150px;
+  }
+  .overlay {
+    top: 0;
+  }
+  .header.active .mobile-depth2 {
+    display: block;
   }
 }
 /*  */
@@ -261,5 +312,14 @@ nav {
   }
   .mobile-menu {
     display: block;
+  }
+  .mobile-menu. i {
+    color: #1d1d1d;
+  }
+  .mobile-depth2 {
+    width: 60%;
+  }
+  .mobile-depth2 a {
+    font-size: 16px;
   }
 }
