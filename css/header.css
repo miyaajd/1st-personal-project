@@ -244,11 +244,18 @@ nav {
   font-size: 18px;
   font-weight: 500;
 }
+
 .mobile-depth2 a:hover {
   color: #999;
 }
 .header.active .mobile-depth2 {
   left: 0;
+}
+#login{
+  color: red;
+}
+#login:hover{
+  color: #1d1d1d;
 }
 
 @media screen and (max-width: 1360px) {
