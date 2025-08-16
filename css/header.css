@@ -78,6 +78,9 @@
 .header.active .tablet-menu i {
   color: #1d1d1d;
 }
+.header.active .mobile-menu i {
+  color: #1d1d1d;
+}
 
 /* 네비 */
 nav {
@@ -320,8 +323,8 @@ nav {
   .mobile-menu {
     display: block;
   }
-  .mobile-menu. i {
-    color: #1d1d1d;
+  .mobile-menu i {
+    color: #fff;
   }
   .mobile-depth2 {
     width: 60%;
