@@ -69,3 +69,10 @@ figure {
     width: 16px;
   }
 }
+
+
+/* seo */
+.seo,
+#seo{
+  display: none;
+}
