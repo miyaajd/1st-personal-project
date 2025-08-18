@@ -123,6 +123,7 @@
     display: none;
   }
   #home-left {
+    width: 100vw;
     aspect-ratio: 3 / 4;
     height: auto;
   }

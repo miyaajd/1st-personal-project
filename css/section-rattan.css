@@ -80,7 +80,7 @@
 /* 390 */
 @media screen and (max-width:390px){
   #tabalet-r-bg {
-  width: 100%;  
+  width: 100vw;  
   aspect-ratio: 3 / 4;
   object-fit: cover;
 }
