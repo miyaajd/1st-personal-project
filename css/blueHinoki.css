@@ -1,0 +1,96 @@
+@charset "utf-8";
+@import url(header.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #1d1d1d;
+  display: block;
+}
+i {
+  display: block;
+  width: 1rem;
+  color: #1d1d1d;
+}
+img {
+  display: block;
+}
+.wrap {
+  margin: auto;
+  width: 100vw;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  position: relative;
+}
+
+/*  */
+
+.header{
+    position: fixed;
+}
+
+/*  */
+#logoBlack {
+  display: block;
+}
+
+/*  */
+
+.top-menu li,
+.top-right i,
+.top-right input {
+  color: #1d1d1d;
+}
+.top-menu li:hover {
+  border-color: #1d1d1d;
+}
+.search-box {
+  border: 1.3px solid #1d1d1d;
+}
+/* active 상태일 때 placeholder 색 */
+.top-right input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+.tablet-menu i {
+  color: #1d1d1d;
+}
+.mobile-menu i {
+  color: #1d1d1d;
+}
+
+/*  */
+.blueHinoki-contents{
+    width: 100vw;
+    display: flex;
+}
+/* 왼쪽영역 */
+.blue-left{
+    width: calc(100% / 2);
+}
+.swiper-slide img{
+    width: 100%;
+    object-fit: cover;
+}
+/* 오른쪽영역 */
+.blue-right{
+    width: calc(100% / 2);
+    background-color: #bbb;
+}
+
+/* 768 */
+
