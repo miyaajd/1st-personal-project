@@ -18,6 +18,12 @@ figure {
   height: 100%;
   object-fit: cover;
 }
+.mainVideo::-webkit-media-controls {
+  display: none !important;
+}
+.mainVideo::-webkit-media-controls-enclosure {
+  display: none !important;
+}
 .visual-txt {
   position: absolute;
   bottom: 0;
@@ -70,9 +76,8 @@ figure {
   }
 }
 
-
 /* seo */
 .seo,
-#seo{
+#seo {
   display: none;
 }
