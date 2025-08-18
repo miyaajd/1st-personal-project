@@ -12,8 +12,8 @@
   transition: all 0.3s ease;
 }
 .logo {
-  width: 200px;
-  margin-right: 24px;
+  width: 220px;
+  margin-right: 32px;
 }
 .logo img {
   width: 100%;
@@ -88,13 +88,13 @@ nav {
 }
 .top-menu {
   display: flex;
-  gap: 24px;
+  gap: 32px;
 }
 .top-menu > li {
   color: #fff;
   font-size: 20px;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -254,14 +254,14 @@ nav {
 .header.active .mobile-depth2 {
   left: 0;
 }
-#login{
+#login {
   color: red;
 }
-#login:hover{
+#login:hover {
   color: #1d1d1d;
 }
 
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1400px) {
   .search-box {
     display: none;
   }
@@ -275,7 +275,7 @@ nav {
     display: none;
   }
 }
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 1170px) {
   nav,
   .top-right,
   .mobile-menu {
