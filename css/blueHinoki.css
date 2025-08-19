@@ -172,11 +172,11 @@ img {
   cursor: pointer;
   font-size: 14px;
 }
-.mL li:last-child {
+.mL li:hover {
   color: #1d1d1d;
   border-color: #1d1d1d;
 }
-.mL li:hover {
+.mL li.active{
   color: #1d1d1d;
   border-color: #1d1d1d;
 }
