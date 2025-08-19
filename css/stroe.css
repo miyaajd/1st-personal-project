@@ -40,3 +40,58 @@ img {
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   position: relative;
 }
+/*  */
+.store-contents-wrap {
+  width: 100vw;
+}
+.store-inner {
+  width: 70%;
+  margin: auto;
+}
+.store-title {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  padding: 100px 0 16px;
+  z-index: 9;
+}
+.s-title-inner{
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.store-title h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.store-list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.store-list li {
+  padding: 0 20px;
+  line-height: 34px;
+  background-color: #efefef;
+  border-radius: 30px;
+  font-size: 13px;
+  color: #999;
+}
+.store-list li.active {
+  color: #fff;
+  background-color: #1d1d1d;
+}
+.store-title::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #efefef;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+/* contents */
+.hannam{
+  padding: 190px 0;
+}
+
