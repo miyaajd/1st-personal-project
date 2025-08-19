@@ -41,6 +41,9 @@ img {
   position: relative;
 }
 /*  */
+.header {
+  z-index: 99;
+}
 .store-contents-wrap {
   width: 100vw;
 }
@@ -55,7 +58,7 @@ img {
   padding: 100px 0 16px;
   z-index: 9;
 }
-.s-title-inner{
+.s-title-inner {
   display: flex;
   gap: 24px;
   align-items: center;
@@ -92,30 +95,115 @@ img {
   bottom: 0;
 }
 /* contents */
-.hannam{
+.hannam {
   padding: 190px 0 0;
 }
-.stores-txt{
-padding: 32px 0 100px;
-display: flex;
-justify-content: space-between;
+.stores-txt {
+  padding: 32px 0 100px;
+  display: flex;
+  justify-content: space-between;
 }
-.stores-txt-l{
+.stores-txt-l {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
-.stores-txt-l h5{
+.stores-txt-l h5 {
   font-size: 16px;
   font-weight: 500;
 }
-.stores-txt-l span{
+.stores-txt-l span {
   font-size: 14px;
   text-decoration: underline;
   cursor: pointer;
 }
-.stores-txt-r{
+.stores-txt-r {
   font-size: 14px;
   line-height: 28px;
   text-align: end;
+}
+/*  */
+/* 768 */
+@media screen and (max-width: 768px) {
+  .store-title {
+    padding-top: 80px;
+  }
+  .store-inner {
+    width: 80%;
+  }
+  .s-title-inner {
+    gap: 18px;
+  }
+  .store-title h1 {
+    font-size: 18px;
+  }
+  .store-list li {
+    padding: 0 18px;
+    line-height: 30px;
+    font-size: 12px;
+  }
+  .hannam {
+    padding: 160px 0 0;
+  }
+  .stores-txt {
+    padding: 32px 0 80px;
+  }
+  .sinsa-txt {
+    padding-bottom: 0;
+  }
+  .stores-txt-l {
+    gap: 28px;
+  }
+  .stores-txt-l h5 {
+    font-size: 15px;
+  }
+  .stores-txt-l span {
+    font-size: 12px;
+  }
+  .stores-txt-r {
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
+/* 435 */
+@media screen and (max-width: 435px) {
+  .store-title {
+    padding-top: 70px;
+  }
+  .store-inner {
+    width: 90%;
+  }
+  .s-title-inner {
+    gap: 12px;
+  }
+  .store-title h1 {
+    font-size: 15px;
+  }
+  .store-list li {
+    padding: 0 15px;
+    line-height: 28px;
+    font-size: 11px;
+  }
+  .hannam {
+    padding: 140px 0 0;
+  }
+  .stores-txt {
+    padding: 20px 0 50px;
+  }
+  .sinsa-txt {
+    padding-bottom: 0;
+  }
+  .stores-txt-l {
+    gap: 20px;
+  }
+  .stores-txt-l h5 {
+    font-size: 14px;
+  }
+  .stores-txt-l span {
+    font-size: 11px;
+  }
+  .stores-txt-r {
+    font-size: 12px;
+    line-height: 20px;
+  }
 }
