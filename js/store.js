@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
       store.classList.add("active");
     });
   });
-  const hannamSwiper = new Swiper(".hannamSwiper", {
+  const storeSwiper = new Swiper(".storeSwiper", {
     loop: true,
     scrollbar: {
       el: ".swiper-scrollbar",
