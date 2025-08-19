@@ -65,6 +65,7 @@ img {
 }
 .search-box {
   border: 1.3px solid #1d1d1d;
+  top: 0;
 }
 /* active 상태일 때 placeholder 색 */
 .top-right input::placeholder {

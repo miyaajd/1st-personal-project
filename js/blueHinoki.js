@@ -7,8 +7,6 @@ window.addEventListener("load", function () {
   });
   const blueSwiper2 = new Swiper(".perfumes", {
     loop: true,
-    slidesPerView: 5.5,
-    spaceBetween: 8,
     breakpoints: {
     // 768
     0: {
@@ -23,6 +21,11 @@ window.addEventListener("load", function () {
       slidesPerView: 3.5,
       spaceBetween: 8,
     },
+    1000: {
+      slidesPerView: 5.5,
+      spaceBetween: 8,
+    },
+    
   },
   });
   //
