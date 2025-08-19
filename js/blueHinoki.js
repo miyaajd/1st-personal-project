@@ -8,29 +8,30 @@ window.addEventListener("load", function () {
   const blueSwiper2 = new Swiper(".perfumes", {
     loop: true,
     breakpoints: {
-    // 768
-    0: {
-      slidesPerView: 2.5,
-      spaceBetween: 8,
+      // 768
+      0: {
+        slidesPerView: 2.5,
+        spaceBetween: 8,
+      },
+      500: {
+        slidesPerView: 3.5,
+        spaceBetween: 8,
+      },
+      768: {
+        slidesPerView: 3.5,
+        spaceBetween: 8,
+      },
+      1000: {
+        slidesPerView: 5.5,
+        spaceBetween: 8,
+      },
     },
-    500: {
-      slidesPerView: 3.5,
-      spaceBetween: 8,
-    },
-    768: {
-      slidesPerView: 3.5,
-      spaceBetween: 8,
-    },
-    1000: {
-      slidesPerView: 5.5,
-      spaceBetween: 8,
-    },
-    
-  },
   });
   //
   // 사이즈 선택
   const sizeOption = this.document.querySelectorAll(".mL > li");
+  const defaultSize = this.document.querySelector("#default-size");
+  defaultSize.classList.add("active");
   sizeOption.forEach((size) => {
     size.addEventListener("click", () => {
       sizeOption.forEach((li) => li.classList.remove("active"));
