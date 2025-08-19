@@ -1,37 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TAMBURINS 탬버린즈</title>
-    <!-- seo 엔진 최적화 -->
-    <!-- 웹페이지의 설명을 정의 -->
-    <meta name="description" content="TAMBURINS 공식 홈페이지 입니다." />
-    <!-- 웹페이지와 관련된 키워드를 정의 -->
-    <meta name="keywords" content="TAMBURINS, Tamburins, tamburins" />
-    <!-- 웹페이지의 저자를 정의  -->
-    <meta name="author" content="TAMBURINS" />
-    <!-- 소셜 미디어에서 페이지가 공유될때 사용되는 제목 -->
-    <meta property="og:title" content="TAMBURINS" />
-    <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 사이트 이름 -->
-    <meta property="og:site_name" content="TAMBURINS 공식홈페이지" />
-    <!-- 소셜 미디어에서 페이지가 웹사이트임을 명시 -->
-    <meta property="og:type" content="website" />
-    <!-- Open Graph 프로토콜에서 사용되는 메타 태그의 속성 중 하나로, 
-     페이지의 간략한 설명을 제공하는 데 사용 -->
-    <!-- 소셜 미디어에서 공유될 때 사용되는 URL -->
-    <meta
-      property="og:url"
-      content="https://miyaajd.github.io/1st-personal-project/"
-    />
-    <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 이미지 -->
-    <meta
-      property="og:image"
-      content="https://miyaajd.github.io/1st-personal-project/images/main-img.png"
-    />
-    <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 설명 -->
-    <meta property="og:description" content="TAMBURINS 공식 홈페이지 입니다." />
-    <!-- favicon -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈 프래그런스 | 탬버린즈</title>
+        <!-- favicon -->
     <link
       rel="icon"
       type="image/png"
@@ -50,14 +23,6 @@
       href="images/favicon/apple-touch-icon.png"
     />
     <link rel="manifest" href="images/favicon/site.webmanifest" />
-    <!-- css -->
-    <link rel="stylesheet" href="css/main.css" />
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-
     <!-- 아이콘 -->
     <link
       rel="stylesheet"
@@ -66,26 +31,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- css -->
+    <link rel="stylesheet" href="css/home.css" />
     <!-- js -->
     <script src="js/header.js"></script>
-    <script src="js/home.js"></script>
-    <script src="js/perfume.js"></script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  </head>
-  <body>
+    
+</head>
+<body>
     <!-- 전체영역 -->
-    <div class="wrap">
-      <!-- 헤더 -->
+     <div class="homeFra-wrap">
+        <!-- 헤더 -->
       <header class="header">
         <!-- 메인로고 -->
         <div class="logo">
-          <a href="#">
-            <img
-              src="images/tmb-img/logo-white.png"
-              alt="메인로고"
-              id="logoWhite"
-            />
+          <a href="index.html">
             <img
               src="images/tmb-img/logo-black.png"
               alt="메인로고블랙"
@@ -270,10 +229,7 @@
                 </li>
                 <li>
                   <a href="#">
-                    <img
-                      src="images/tmb-img/imgi_17_category.jpg"
-                      alt="일본"
-                    />
+                    <img src="images/tmb-img/imgi_17_category.jpg" alt="일본" />
                     <span>일본</span>
                   </a>
                 </li>
@@ -317,7 +273,7 @@
         <div class="tablet-menu">
           <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
           <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-          <i class="fa-solid fa-bars" id="hamburger"></i>
+          <i class="fa-solid fa-bars"></i>
         </div>
 
         <!-- 반응형 메뉴바 (390) -->
@@ -351,355 +307,87 @@
           </ul>
         </div>
       </header>
-
-      <!-- 비주얼 -->
-      <div class="visual-wrap">
-        <figure>
-          <!-- 비디오영역 -->
-          <video class="mainVideo" autoplay loop muted playsinline>
-            <source
-              src="images/tmb-img/main-video.mp4"
-              type="video/mp4"
-            />
-          </video>
-          <!-- 비디오 영역안 텍스트 -->
-          <div class="visual-txt">
-            <a href="bluehinoki.html">
-              <span class="blue-hinoki">BLUE HINOKI</span>
-              <img
-                src="images/tmb-img/WHITE ARROW.png"
-                alt="방향키"
-                class="arrow"
-            /></a>
-          </div>
-        </figure>
-      </div>
-      <!-- seo 이미지 -->
-      <div class="seo">
-        <img src="images/main-img.png" alt="seo" id="seo" />
-      </div>
-      <!-- 섹션-퍼퓸 -->
-      <section class="perfume-wrap">
-        <!-- 퍼퓸상단 -->
-        <div class="perfume-top">
-          <ul class="p-top">
+      <!-- 컨텐츠 -->
+      <div class="homeFra-content-wrap">
+        <div class="homeFra-title">
+          <h1>HOME FRAGRANCE</h1>
+        </div>
+        <!--  -->
+        <div class="homeFra">
+          <ul class="hF-list">
             <li>
-              <a href="bluehinoki.html" class="perfume-txt">
-                <span class="perfume">PERFUME 50mL</span>
+              <a href="#">
                 <img
-                  src="images/tmb-img/BLACK ARROW.png"
-                  alt="방향키"
-                  class="arrow"
+                  src="images/homeFra/imgi_24_Thumbnail_PerfumeCandle_60g_set.jpg"
+                  alt="1"
                 />
+                <i class="fa-solid fa-bag-shopping"></i>
+                <div class="hF-txt-wrap">
+                  <h5>퍼퓸 캔들 미니 세트</h5>
+                  <span>캔들 네 가지 향</span>
+                  <p>&#8361; 148,000</p>
+                </div>
               </a>
             </li>
             <li>
-              <a href="#" class="p-img">
+              <a href="#">
                 <img
-                  src="images/perfume/imgi_20_thumbnail_50ml_Perfume_Hinoki.jpg"
-                  alt="퍼퓸20"
+                  src="images/homeFra/imgi_23_Thumbnail_PerfumeCandle_200g_late.jpg"
+                  alt="2"
                 />
+                <i class="fa-solid fa-bag-shopping"></i>
+                <div class="hF-txt-wrap">
+                  <h5>퍼퓸 캔들 레이트어텀</h5>
+                  <span>비터 오렌지 | 사탕수수 풀내음 | 머스크</span>
+                  <p>&#8361; 83,000</p>
+                </div>
               </a>
             </li>
             <li>
-              <a href="#" class="p-img">
+              <a href="#">
                 <img
-                  src="images/perfume/imgi_21_thumbnail_Bottari_50ml_Perfume_2.jpg"
-                  alt="퍼퓸21"
+                  src="images/homeFra/imgi_21_Thumbnail_RoomSpray_Papyrus_2.jpg"
+                  alt="3"
                 />
+                <i class="fa-solid fa-bag-shopping"></i>
+                <div class="hF-txt-wrap">
+                  <h5>룸 스프레이 파피루스</h5>
+                  <span>파피루스 | 그린티 | 샌달우드</span>
+                  <p>품절</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="images/homeFra/imgi_20_thumbnail_Vinyl_Hinoki.jpg"
+                  alt="4"
+                />
+                <i class="fa-solid fa-bag-shopping"></i>
+                <div class="hF-txt-wrap">
+                  <h5>퍼퓸 바이닐 블루히노키</h5>
+                  <span>상쾌한 파인오일 | 푸른 히노키 | 드리프트우드</span>
+                  <p>&#8361; 68,000</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="images/homeFra/imgi_22_Thumbnail_RoomDiffuser_Papyrus_2.jpg"
+                  alt="5"
+                />
+                <i class="fa-solid fa-bag-shopping"></i>
+                <div class="hF-txt-wrap">
+                  <h5>디퓨저 파피루스</h5>
+                  <span>파피루스 | 그린티 | 샌달우드</span>
+                  <p>&#8361; 120,000</p>
+                </div>
               </a>
             </li>
           </ul>
         </div>
-        <!-- 퍼퓸하단 -->
-        <div class="perfume-bottom">
-          <ul class="perfume-list">
-            <li>
-              <img
-                src="images/perfume/imgi_20_thumbnail_50ml_Perfume_Hinoki.jpg"
-                alt="퍼퓸20"
-              />
-            </li>
-            <li>
-              <img
-                src="images/perfume/imgi_21_thumbnail_Bottari_50ml_Perfume_2.jpg"
-                alt="퍼퓸21"
-              />
-            </li>
-            <li>
-              <img
-                src="images/perfume/imgi_22_thumbnail_Evening_50ml_Perfume.jpg"
-                alt="퍼퓸22"
-              />
-            </li>
-            <li>
-              <img
-                src="images/perfume/imgi_28_thumbnail_50ml_Perfume_Haystacks.jpg"
-                alt="퍼퓸28"
-              />
-            </li>
-            <li>
-              <img
-                src="images/perfume/imgi_29_thumbnail_50ml_Perfume_HolyMetal.jpg"
-                alt="퍼퓸29"
-              />
-            </li>
-            <li>
-              <img
-                src="images/perfume/imgi_31_thumbnail_50ml_Perfume_WoodSaltBeach.jpg"
-                alt="퍼퓸31"
-              />
-            </li>
-            <li>
-              <img
-                src="images/perfume/imgi_36_thumbnail_Bottari_11ml_Purfume(Black)_2.jpg"
-                alt="퍼퓸36"
-              />
-            </li>
-            <li>
-              <img
-                src="images/perfume/imgi_37_thumbnail_Bottari_11ml_Purfume(White).jpg"
-                alt="퍼퓸37"
-              />
-            </li>
-            <li>
-              <img
-                src="images/perfume/imgi_42_thumbnail_11ml_Perfume_SaltyVanilla.jpg"
-                alt="퍼퓸42"
-              />
-            </li>
-            <li>
-              <img
-                src="images/perfume/imgi_46_thumbnail_14ml_EggPerfume_Wear_Beigge.jpg"
-                alt="퍼퓸46"
-              />
-            </li>
-            <li>
-              <img
-                src="images/perfume/imgi_48_thumbnail_EggPerfume_1.jpg"
-                alt="퍼퓸48"
-              />
-            </li>
-            <li>
-              <img
-                src="images/perfume/imgi_51_thumbnail_Bottari_Oil_Perfume_2.jpg"
-                alt="퍼퓸51"
-              />
-            </li>
-            <li>
-              <img
-                src="images/perfume/imgi_52_thumbnail_Bottari_Oil_Perfume(Black).jpg"
-                alt="퍼퓸52"
-              />
-            </li>
-          </ul>
-        </div>
-        <!-- 반응형 퍼퓸섹션 (768) -->
-        <div class="tablet-p-wrap">
-          <div class="tablet-p-top">
-            <a href="bluehinoki.html"
-              ><img
-                src="images/perfume/imgi_20_thumbnail_50ml_Perfume_Hinoki.jpg"
-                alt="퍼퓸20"
-                id="hinoki-p" />
-              <div class="tablet-p-txt">
-                <span class="perfume">PERFUME 50mL</span>
-                <img
-                  src="images/tmb-img/BLACK ARROW.png"
-                  alt="방향키"
-                /></div
-            ></a>
-          </div>
-          <div class="tablet-p-bottom">
-            <ul class="tablet-p-list">
-              <li>
-                <img
-                  src="images/perfume/imgi_20_thumbnail_50ml_Perfume_Hinoki.jpg"
-                  alt="퍼퓸20"
-                />
-              </li>
-              <li>
-                <img
-                  src="images/perfume/imgi_21_thumbnail_Bottari_50ml_Perfume_2.jpg"
-                  alt="퍼퓸21"
-                />
-              </li>
-              <li>
-                <img
-                  src="images/perfume/imgi_22_thumbnail_Evening_50ml_Perfume.jpg"
-                  alt="퍼퓸22"
-                />
-              </li>
-              <li>
-                <img
-                  src="images/perfume/imgi_29_thumbnail_50ml_Perfume_HolyMetal.jpg"
-                  alt="퍼퓸29"
-                />
-              </li>
-              <li>
-                <img
-                  src="images/perfume/imgi_42_thumbnail_11ml_Perfume_SaltyVanilla.jpg"
-                  alt="퍼퓸42"
-                />
-              </li>
-              <li>
-                <img
-                  src="images/perfume/imgi_36_thumbnail_Bottari_11ml_Purfume(Black)_2.jpg"
-                  alt="퍼퓸36"
-                />
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- 섹션-라탄 -->
-      <section class="rattan-wrap">
-        <img src="images/tmb-img/rattab-bg.png" alt="라탄배경" />
-        <div class="rattan-txt">
-          <a href="rattanWear.html">
-            <span class="rattan">RATTAN WEAR EGG PERFUME</span>
-            <img
-              src="images/tmb-img/WHITE ARROW.png"
-              alt="방향키"
-              class="arrow"
-            />
-          </a>
-        </div>
-      </section>
-      <!--반응형 라탄섹션 (768)  -->
-      <div class="tablet-r-wrap">
-        <a href="rattanWear.html">
-          <img
-            src="images/tmb-img/t-rattan-bg.jpeg"
-            alt="라탄배경"
-            id="tabalet-r-bg"
-          />
-          <div class="tablet-r-txt">
-            <span>RATTAN WEAR EGG PERFUME</span>
-            <img src="images/tmb-img/WHITE ARROW.png" alt="방향키" />
-          </div>
-        </a>
       </div>
-
-      <!-- 섹션-fragrance -->
-      <section class="home-wrap">
-        <!-- 왼쪽영역 -->
-        <div class="home-left">
-          <a href="home.html">
-            <img src="images/fragrance/홈1.png" alt="홈1" />
-          </a>
-        </div>
-        <!-- 오른쪽 영역 -->
-        <div class="home-right">
-          <div class="home-txt">
-            <a href="home.html">
-              <span class="home">HOME FRAGRANCE</span>
-              <img
-                src="images/tmb-img/BLACK ARROW.png"
-                alt="방향키"
-                class="arrow"
-              />
-            </a>
-          </div>
-          <!-- swiper -->
-          <div class="swiper home-swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  src="images/fragrance/Rectangle 25.png"
-                  alt="슬라이드"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/fragrance/Rectangle 26.png"
-                  alt="슬라이드"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/fragrance/Rectangle 27.png"
-                  alt="슬라이드"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/fragrance/Rectangle 28.png"
-                  alt="슬라이드"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/fragrance/Rectangle 29.png"
-                  alt="슬라이드"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--반응형 홈섹션 (768)  -->
-      <div class="tablet-h-wrap">
-        <a href="home.html">
-          <div class="tablet-h-left">
-            <img src="images/fragrance/홈1.png" alt="홈1" id="home-left" />
-            <div class="tablet-h-txt">
-              <span>HOME FRAGRANCE</span>
-              <img src="images/tmb-img/BLACK ARROW.png" alt="방향키" />
-            </div>
-          </div>
-        </a>
-        <div class="swiper tablet-h-right">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="images/fragrance/Rectangle 25.png" alt="홈25" />
-            </div>
-            <div class="swiper-slide">
-              <img src="images/fragrance/Rectangle 26.png" alt="홈26" />
-            </div>
-            <div class="swiper-slide">
-              <img src="images/fragrance/Rectangle 27.png" alt="홈27" />
-            </div>
-            <div class="swiper-slide">
-              <img src="images/fragrance/Rectangle 28.png" alt="홈28" />
-            </div>
-            <div class="swiper-slide">
-              <img src="images/fragrance/Rectangle 29.png" alt="홈29" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 섹션 - 스토어 -->
-      <section class="store-wrap">
-        <img src="images/tmb-img/stroe-bg.png" alt="스토어배경" />
-        <div class="store-txt">
-          <a href="#">
-            <span class="store">STORE</span>
-            <img
-              src="images/tmb-img/WHITE ARROW.png"
-              alt="방향키"
-              class="arrow"
-            />
-          </a>
-        </div>
-      </section>
-      <!--반응형 스토어섹션 (768)  -->
-      <div class="tablet-s-wrap">
-        <a href="#">
-          <img
-            src="images/tmb-img/stroe-bg.png"
-            alt="라탄배경"
-            id="tabalet-s-bg"
-          />
-          <div class="tablet-s-txt">
-            <span>STORE</span>
-            <img src="images/tmb-img/BLACK ARROW.png" alt="방향키" />
-          </div>
-        </a>
-      </div>
-
       <!-- 푸터 -->
       <footer class="footer">
         <!-- 푸터상단 -->
@@ -806,6 +494,6 @@
           </div>
         </div>
       </footer>
-    </div>
-  </body>
+     </div>
+</body>
 </html>
