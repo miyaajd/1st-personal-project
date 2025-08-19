@@ -126,4 +126,13 @@ img {
     margin-left: 16px;
     padding-top: 80px;
   }
+  .rW-txt-wrap h5 {
+    font-size: 14px;
+  }
+  .rW-txt-wrap span {
+    font-size: 12px;
+  }
+  .rW-txt-wrap p {
+    font-size: 14px;
+  }
 }
