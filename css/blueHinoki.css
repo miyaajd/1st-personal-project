@@ -81,7 +81,6 @@ img {
 .blueHinoki-contents {
   position: relative;
   width: 100vw;
-  height: 60vw;
   display: flex;
 }
 /* 왼쪽영역 */
@@ -90,6 +89,7 @@ img {
 }
 .swiper-slide img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .swiper-button-next,
@@ -122,6 +122,9 @@ img {
 }
 .head-txt p {
   font-size: 18px;
+}
+.head-txt i {
+  display: none;
 }
 .dscr-txt {
   font-size: 15px;
@@ -176,7 +179,7 @@ img {
   color: #1d1d1d;
   border-color: #1d1d1d;
 }
-.mL li.active{
+.mL li.active {
   color: #1d1d1d;
   border-color: #1d1d1d;
 }
@@ -192,21 +195,110 @@ img {
   font-size: 14px;
   border-radius: 5px;
   cursor: pointer;
+  box-sizing: border-box;
 }
 /* etc */
-.etc-list{
+.etc-list {
   padding-top: 70px;
   display: flex;
   flex-direction: column;
   gap: 30px;
   font-size: 14px;
 }
-.etc-list a{
+.etc-list a {
   display: flex;
   justify-content: space-between;
 }
-.etc-list li i{
+.etc-list li i {
   color: #3d3d3d;
   font-size: 14px;
 }
 /* 768 */
+.tablet-menu {
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .header{
+    align-items: center;
+  }
+  .blueHinoki-contents {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+  }
+  .blue-left {
+    width: 100vw;
+  }
+  .blue-right {
+    width: 100vw;
+    padding-top: 80px;
+  }
+  .dscr-inner {
+    width: 90%;
+  }
+  .head-txt i {
+    display: inline-block;
+  }
+  #up-angle {
+    display: none;
+  }
+  .head-txt p {
+    display: inline-block;
+  }
+  #dscr {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+  }
+  #dscr.active {
+    max-height: 500px;
+    opacity: 1;
+  }
+  #logoBlack {
+    width: 150px;
+  }
+  #addShoppingBag{
+    width: 100%;
+  }
+}
+
+/* 390 */
+@media screen and (max-width: 390px){
+#logoBlack{
+  width: 100px;
+}
+.header{
+  height: 60px;
+}
+.blueHinoki-contents{
+  padding-top: 60px;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after{
+font-size: 30px !important;
+}
+.blue-right{
+  padding-top: 40px;
+}
+.head-txt h1{
+  font-size: 18px;
+}
+.head-txt span{
+  font-size: 16px;
+  padding: 10px 0 18px;
+}
+.head-txt p,
+.head-txt i{
+  font-size: 14px;
+}
+.dscr-txt{
+  padding: 16px 0;
+}
+.dscr-txt p{
+  font-size: 12px;
+}
+.perfumes{
+  margin-top: 18px;
+}
+}
