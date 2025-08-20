@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100vw;
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #1d1d1d;
+  display: block;
+}
+i {
+  display: block;
+  width: 1rem;
+  color: #1d1d1d;
+}
+img {
+  display: block;
+}
+.wrap {
+  margin: auto;
+  width: 100vw;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  position: relative;
+}
+/*  */
+.modal {
+  position: fixed;
+  z-index: 99999999;
+  top: 16px;
+  right: 30px;
+  width: 500px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: none;
+}
+.modal-content {
+  width: 100%;
+  height: 100%;
+}
+#closeBtn {
+  font-size: 15px;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+.modal-main {
+  width: 100%;
+  text-align: center;
+}
+.modal-main img {
+  margin: auto;
+  width: 70%;
+}
+.modal-main h5 {
+  padding: 32px 0 8px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.modal-main span {
+  font-weight: 500;
+  font-size: 16px;
+  color: #888;
+}
+.modal-main p {
+  padding: 18px 0 24px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.modal-main > p > span {
+  color: #1d1d1d;
+  text-decoration: underline;
+}
+#event {
+  all: unset;
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 14px 0;
+  background-color: #1d1d1d;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+#event i {
+  color: #fff;
+}
