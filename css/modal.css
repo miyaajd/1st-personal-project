@@ -57,6 +57,7 @@ img {
   position: absolute;
   right: 10px;
   top: 8px;
+  cursor: pointer;
 }
 .modal-main {
   width: 100%;
@@ -65,6 +66,28 @@ img {
 .modal-main img {
   margin: auto;
   width: 70%;
+  position: relative;
+}
+.gift{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+  position: absolute;
+  top: 30px;
+  right: 80px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 6px 11px;
+  border-radius: 30px;
+}
+.gift i{
+  color: #fff;
+  font-size: 14px;
+}
+.gift h4{
+  font-weight: 500;
+  color: #fff;
+  font-size: 12px;
 }
 .modal-main h5 {
   padding: 32px 0 8px;
@@ -96,6 +119,7 @@ img {
   color: #fff;
   font-size: 18px;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 #event i {
   color: #fff;
