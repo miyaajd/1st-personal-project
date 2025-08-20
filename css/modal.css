@@ -43,7 +43,7 @@ img {
   top: 16px;
   right: 30px;
   width: 500px;
-  height: 600px;
+  height: 620px;
   background-color: #fff;
   border-radius: 5px;
   display: none;
@@ -123,4 +123,52 @@ img {
 }
 #event i {
   color: #fff;
+}
+/*  */
+/* 390 */
+@media screen and (max-width:550px) {
+  .modal {
+  top: 60px;
+  right: 50%;
+  transform: translateX(50%);
+  width: 350px;
+  height: 450px;
+}
+.gift{
+  top: 25px;
+  right: 65px;
+}
+.gift i{
+  font-size: 12px;
+}
+.gift h4{
+  font-size: 10px;
+}
+#closeBtn{
+  font-size: 12px;
+}
+.modal-main h5 {
+  padding: 24px 0 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.modal-main span {
+  font-weight: 500;
+  font-size: 12px;
+  color: #888;
+}
+.modal-main p {
+  padding: 12px 0 18px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+#event {
+  padding: 10px 0;
+  background-color: #1d1d1d;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
 }
