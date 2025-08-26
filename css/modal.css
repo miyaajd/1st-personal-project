@@ -69,7 +69,7 @@ img {
   width: 70%;
   position: relative;
 }
-.gift{
+.gift {
   display: flex;
   flex-direction: column;
   gap: 3px;
@@ -81,11 +81,11 @@ img {
   padding: 6px 11px;
   border-radius: 30px;
 }
-.gift i{
+.gift i {
   color: #fff;
   font-size: 14px;
 }
-.gift h4{
+.gift h4 {
   font-weight: 500;
   color: #fff;
   font-size: 12px;
@@ -125,59 +125,152 @@ img {
 #event i {
   color: #fff;
 }
-#modal-logo{
+#modal-logo {
   width: 20%;
   padding: 20px 0 0;
 }
 /*  */
 /* 390 */
-@media screen and (max-width:550px) {
+@media screen and (max-width: 550px) {
   .modal {
-  top: 60px;
-  right: 50%;
-  transform: translateX(50%);
-  width: 350px;
-  height: 465px;
+    top: 60px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 350px;
+    height: 465px;
+  }
+  .gift {
+    top: 45px;
+    left: 65px;
+  }
+  .gift i {
+    font-size: 12px;
+  }
+  .gift h4 {
+    font-size: 10px;
+  }
+  #closeBtn {
+    font-size: 12px;
+  }
+  .modal-main h5 {
+    padding: 24px 0 5px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .modal-main span {
+    font-weight: 500;
+    font-size: 12px;
+    color: #888;
+  }
+  .modal-main p {
+    padding: 12px 0 18px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  #event {
+    padding: 10px 0;
+    background-color: #1d1d1d;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  #modal-logo {
+    width: 20%;
+    padding: 14px 0 0;
+  }
 }
-.gift{
-  top: 45px;
-  left: 65px;
+/*  */
+/*  */
+/*  */
+/* modal */
+.modalWrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999999999999999999;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
 }
-.gift i{
-  font-size: 12px;
+.modalWrap.none {
+  opacity: 0;
+  visibility: hidden;
 }
-.gift h4{
-  font-size: 10px;
+.modalBox {
+  width: 950px;
+  margin: auto;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 2%;
 }
-#closeBtn{
-  font-size: 12px;
+.modalLogo {
+  width: 20%;
+  margin: 5% auto;
 }
-.modal-main h5 {
-  padding: 24px 0 5px;
-  font-size: 16px;
+.modalLogo img {
+  width: 100%;
+}
+.modalDscr {
+  padding: 0 5%;
   font-weight: 500;
 }
-.modal-main span {
+.modalDscr strong {
+  font-weight: 800;
+}
+.points {
+  padding: 5%;
+  line-height: 2.3;
+}
+.points li {
+  font-size: 0.9rem;
   font-weight: 500;
-  font-size: 12px;
-  color: #888;
+  color: #7b7b7b;
 }
-.modal-main p {
-  padding: 12px 0 18px;
-  font-size: 12px;
-  line-height: 1.5;
-}
-#event {
-  padding: 10px 0;
-  background-color: #1d1d1d;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 16px;
-  letter-spacing: 1px;
+#modalClose {
+  all: unset;
+  margin-bottom: 3%;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  text-decoration: underline;
   cursor: pointer;
 }
-#modal-logo{
-  width: 20%;
-  padding: 14px 0 0;
+@media screen and (max-width:1000px) {
+  .modalBox{
+    width: 700px;
+  }
+  .points{
+    padding: 5% 8%;
+  }
 }
+@media screen and (max-width:768px){
+.modalBox{
+    width: 500px;
+  }
+  .modalLogo {
+  width: 30%;
+}
+}
+@media screen and (max-width:550px){
+.modalBox{
+    width: 350px;
+  }
+  .modalDscr,
+  .points{
+    font-size: 0.8rem;
+    line-height: 1.7;
+  }
+  .points li{
+    font-size: 0.75rem;
+  }
 }

@@ -12,4 +12,13 @@ window.addEventListener("load", function () {
   eventBtn.addEventListener("click" , function(){
     window.location.href = "bluehinoki.html"
   })
+  // 
+  // 
+  // read me modal
+   // modal
+  const modalClose = this.document.querySelector("#modalClose");
+  const modal2 = this.document.querySelector(".modalWrap");
+  modalClose.addEventListener("click", () => {
+    modal2.classList.add("none");
+  });
 });
