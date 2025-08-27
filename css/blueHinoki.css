@@ -239,9 +239,11 @@ img {
   }
   .head-txt i {
     display: inline-block;
+    cursor: pointer;
   }
   #up-angle {
     display: none;
+    cursor: pointer;
   }
   .head-txt p {
     display: inline-block;
